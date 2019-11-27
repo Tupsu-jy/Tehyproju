@@ -11,23 +11,23 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Lomake5 extends AppCompatActivity {
+public class lomake6 extends AppCompatActivity {
 
-    Counters page5 = Counters.getInstance();
+    Counters page6 = Counters.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lomake5);
-        addListenerOnButton();
+        setContentView(R.layout.activity_lomake6);
+        //addListenerOnButton();
     }
 
     public void tulos(View view){
         TextView arvosana = findViewById(R.id.tulos_numero);
-        arvosana.setText(Integer.toString(page5.getTulos()));
+        arvosana.setText(Integer.toString(page6.getTulos()));
     }
 
-    public void addListenerOnButton() {
+    /**public void addListenerOnButton() {
         final Context context = this;
         Button button = (Button) findViewById(R.id.seuraava_sivu);
         button.setOnClickListener(new OnClickListener() {
@@ -38,51 +38,55 @@ public class Lomake5 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }*/
+    public void palaaEtusivulle(View view){
+        Intent intent1 = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent1);
     }
 
     public void onRadioButtonClicked(View view){
         boolean checked = ((RadioButton) view).isChecked();
 
         switch (view.getId()){
-            case R.id.uni1:
+            case R.id.stressi1:
                 if (checked)
-                    page5.increase(1);
+                    page6.increase(1);
                 break;
-            case R.id.uni2:
+            case R.id.stressi2:
                 if (checked)
-                    page5.increase(2);
+                    page6.increase(2);
                 break;
-            case R.id.uni3:
+            case R.id.stressi3:
                 if (checked)
-                    page5.increase(3);
+                    page6.increase(3);
                 break;
-            case R.id.uni4:
+            case R.id.stressi4:
                 if (checked)
-                    page5.increase(4);
+                    page6.increase(4);
                 break;
-            case R.id.uni5:
+            case R.id.stressi5:
                 if (checked)
-                    page5.increase(5);
+                    page6.increase(5);
                 break;
-            case R.id.uni6:
+            case R.id.stressi6:
                 if (checked)
-                    page5.increase(6);
+                    page6.increase(6);
                 break;
-            case R.id.uni7:
+            case R.id.stressi7:
                 if (checked)
-                    page5.increase(7);
+                    page6.increase(7);
                 break;
-            case R.id.uni8:
+            case R.id.stressi8:
                 if (checked)
-                    page5.increase(8);
+                    page6.increase(8);
                 break;
-            case R.id.uni9:
+            case R.id.stressi9:
                 if (checked)
-                    page5.increase(9);
+                    page6.increase(9);
                 break;
-            case R.id.uni10:
+            case R.id.stressi10:
                 if (checked)
-                    page5.increase(10);
+                    page6.increase(10);
                 break;
         }
 

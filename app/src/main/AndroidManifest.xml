@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".vinkit"></activity>
         <activity android:name=".kalenteri" />
+        <activity android:name=".lomake6"/>
         <activity android:name=".Lomake5" />
         <activity android:name=".Lomake4" />
         <activity android:name=".Lomake3" />
