@@ -14,7 +14,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text=". Miten arvioisit ravintosi määrän/laadun tänään?" />
+        android:text="4. Miten arvioisit ravintosi määrän/laadun tänään?" />
 
     <RadioGroup
         android:id="@+id/radioGroup4"
