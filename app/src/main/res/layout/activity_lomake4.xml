@@ -127,22 +127,6 @@
         android:shadowColor="#00575454"
         android:text="Seuraava" />
 
-    <Button
-        android:id="@+id/tulos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="tulos"
-        android:text="Laske tulos" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tuloksesi:" />
-
-    <TextView
-        android:id="@+id/tulos_numero"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
 </LinearLayout>

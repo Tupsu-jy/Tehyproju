@@ -14,10 +14,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text=". Miten arvioisit ravintosi määrän/laadun tänään?" />
+        android:text="5. Miten arvioisit unen määrän/laadun tänään?" />
 
     <RadioGroup
-        android:id="@+id/radioGroup4"
+        android:id="@+id/radioGroup5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -25,93 +25,93 @@
         android:layout_marginTop="16dp">
 
         <RadioButton
-            android:id="@+id/ravinto1"
+            android:id="@+id/uni1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="1. En syönyt tänään mitään"
+            android:text="1. En nukkunut ollenkaan"
             android:textSize="12sp" />
 
         <RadioButton
-            android:id="@+id/ravinto2"
+            android:id="@+id/uni2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="2. Napostelin vähän päivän aikana"
+            android:text="2. Torkahtelin päivän mittaan vähäksi aikaa"
             android:textSize="12sp" />
 
         <RadioButton
-            android:id="@+id/ravinto3"
+            android:id="@+id/uni3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="3. Söin herkkuja/roskatuokaa vähän väliä päivän aikana"
+            android:text="3. Pyörin sängyssä suurimman osan yöstä"
             android:textSize="12sp" />
 
         <RadioButton
-            android:id="@+id/ravinto4"
+            android:id="@+id/uni4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="4. Kävin ulkona pikaisesti/siivosin kotona"
+            android:text="4. Nukuin katkoittain heikkoa unta"
             android:textSize="12sp" />
 
         <RadioButton
-            android:id="@+id/ravinto5"
+            android:id="@+id/uni5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="5. Kävin lähikaupassa/pissatin koiran"
+            android:text="5. Nukuin sikeästi pätkittäin, mutta heräsin useamman kerran yöllä"
             android:textSize="12sp" />
 
         <RadioButton
-            android:id="@+id/ravinto6"
+            android:id="@+id/uni6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="6. Kävin kävelylenkillä/kävelin kouluun tai töihin"
+            android:text="6. Nukuin sikeästi pieniä pätkiä, mutta heräilin yön mittaan muutaman kerran"
             android:textSize="12sp" />
 
         <RadioButton
-            android:id="@+id/ravinto7"
+            android:id="@+id/uni7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="7. Käytin koiran kunnon lenkeillä. "
+            android:text="7. Nukuin sikeästi pari tuntia yöllä "
             android:textSize="12sp" />
 
         <RadioButton
-            android:id="@+id/ravinto8"
+            android:id="@+id/uni8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="8. Käytin koiran kunnon lenkeillä. "
+            android:text="8. Nukuin sikeästi 4-6 tuntia "
             android:textSize="12sp" />
 
         <RadioButton
-            android:id="@+id/ravinto9"
+            android:id="@+id/uni9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="9. Käytin koiran kunnon lenkeillä. "
+            android:text="9. Nukuin sikeästi 6-8 tuntia "
             android:textSize="12sp" />
 
         <RadioButton
-            android:id="@+id/ravinto10"
+            android:id="@+id/uni10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="10. Söin monipuolisen aterian 4-5 kertaa päivässä "
+            android:text="10. Nukuin sikeäati yli 8 tuntia "
             android:textSize="12sp" />
 
     </RadioGroup>
