@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Lomake1">
+
+    <TextView
+        android:id="@+id/kysymys2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="2. Miten arvioisit sosiaalisuutesi tänään?" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/sosiaali1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="1. Olin yksinäinen, enkä saanut yhtään sosiaalista kanssakäymistä"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/sosiaali2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="2. Vietin aikaa ihmisten ilmoilla, mutten ollut kanssakäymisissä kenenkään kanssa"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/sosiaali3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="3. Tervehdin naapuria/kaupan henkilökuntaa"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/sosiaali4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="4. Nukuin katkoittain heikkoa unta"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/sosiaali5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="5. Nukuin sikeästi pätkittäin, mutta heräsin useamman kerran yöllä"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/sosiaali6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="6. Nukuin sikeästi pieniä pätkiä, mutta heräilin yön mittaan muutaman kerran"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/sosiaali7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="7. Nukuin sikeästi pari tuntia yöllä "
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/sosiaali8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="8. Nukuin sikeästi 4-6 tuntia "
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/sosiaali9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="9. Nukuin sikeästi 6-8 tuntia "
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/sosiaali10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="10. Sain positiivisia sosiaalisiatilanteita sopivan määrän "
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/seuraava_sivu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+        android:shadowColor="#00575454"
+        android:text="Seuraava" />
+
+
+</LinearLayout>

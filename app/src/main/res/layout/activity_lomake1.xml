@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Lomake1">
+
+
+            <TextView
+                android:id="@+id/taytto_ohjeet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Valitse annetuista vaihtoehdoista sopivin" />
+
+            <TextView
+                android:id="@+id/kysymys1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="1. Miten arvioisit mielialasi?" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp">
+
+        <RadioButton
+            android:id="@+id/mieliala1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:padding="8dp"
+            android:text="1. Olet masentunut"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/mieliala2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:padding="8dp"
+            android:text="2. Asiat ovat huonosti, etkä voi tehdä asialle mitään"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/mieliala3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:padding="8dp"
+            android:text="3. Elämä kulkee alamäkeen tällä hetkellä ja tullet olosi toivottomaksi"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/mieliala4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:padding="8dp"
+            android:text="4. Asiat eivät ole hyvin, mutta olet kokenut pahempaakin ja pääset tästä yli"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/mieliala5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:padding="8dp"
+            android:text="5. Tämä ei ole paras päivä, mutta ei huonoinkaan ja pääset tästä kyllä yli"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/mieliala6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:padding="8dp"
+            android:text="6. Asiat eivät ole välttämättä nyt kovinkaan hyvin, mutta ne ovat paranemaan päin"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/mieliala7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:padding="8dp"
+            android:text="7. Olet vähän allapäin, mutta se ei ole maailmanloppu"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/mieliala8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:padding="8dp"
+            android:text="8. Tämä on vain pieni este, josta pääset yli helposti"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/mieliala9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:padding="8dp"
+            android:text="9. Tämä on pieni harmaa pilvi muuten aurinkoisena päivänä"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/mieliala10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:padding="8dp"
+            android:text="10. Kaikki elämässä on hyvin!"
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/seuraava_sivu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+        android:shadowColor="#00575454"
+        android:text="Seuraava" />
+
+
+</LinearLayout>

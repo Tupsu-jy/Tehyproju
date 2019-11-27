@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Lomake1">
+
+    <TextView
+        android:id="@+id/kysymys3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="3. Miten arvioisit liikuntasi/aktivisuutesi määrän tänään?" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/liikunta1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="1. En noussut tänään ylös"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/liikunta2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="2. Liikuntani oli lähinnä jääkaapille ja takaisin"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/liikunta3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="3. En käynyt ulkona, mutta kävelin sisällä"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/liikunta4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="4. Kävin ulkona pikaisesti/siivosin kotona"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/liikunta5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="5. Kävin lähikaupassa/pissatin koiran"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/liikunta6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="6. Kävin kävelylenkillä/kävelin kouluun tai töihin"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/liikunta7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="7. Käytin koiran kunnon lenkeillä. "
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/liikunta8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="8. Käytin koiran kunnon lenkeillä. "
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/liikunta9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="9. Käytin koiran kunnon lenkeillä. "
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/liikunta10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="10. Käytin koiran kunnon lenkeillä. "
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/seuraava_sivu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+        android:shadowColor="#00575454"
+        android:text="Seuraava" />
+
+
+
+</LinearLayout>
