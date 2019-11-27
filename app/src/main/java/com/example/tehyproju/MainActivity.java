@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lomake1);
+        setContentView(R.layout.activity_main);
     }
     public void avaaKalenteri(View view) {
         Intent intent = new Intent(getApplicationContext(), kalenteri.class);
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void lisaaMerkinta(View view){
-        Intent intent1 = new Intent(getApplicationContext(), merkinta.class);
+        Intent intent1 = new Intent(getApplicationContext(), Lomake1.class);
         startActivity(intent1);
     }
 

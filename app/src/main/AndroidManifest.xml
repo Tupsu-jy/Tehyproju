@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".vinkit"></activity>
+        <activity android:name=".kalenteri" />
         <activity android:name=".Lomake5" />
         <activity android:name=".Lomake4" />
         <activity android:name=".Lomake3" />
         <activity android:name=".Lomake2" />
-        <activity android:name=".Lomake1">
+        <activity android:name=".Lomake1"/>
+            <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
