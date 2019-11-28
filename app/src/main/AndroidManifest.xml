@@ -17,7 +17,7 @@
         <activity android:name=".Lomake3" />
         <activity android:name=".Lomake2" />
         <activity android:name=".Lomake1"/>
-        <activity android:name=".graph"/>
+        <activity android:name=".Graph"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

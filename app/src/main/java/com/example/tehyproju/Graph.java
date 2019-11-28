@@ -8,7 +8,7 @@ import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
-public class graph extends AppCompatActivity {
+public class Graph extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

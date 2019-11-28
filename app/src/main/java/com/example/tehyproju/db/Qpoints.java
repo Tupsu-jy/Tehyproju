@@ -5,7 +5,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity
-public class qpoints {
+public class Qpoints {
     @PrimaryKey
     public int id;
 
