@@ -5,6 +5,7 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#45DBD7D7"
     tools:context=".lomake6">
 
     <TextView
@@ -55,7 +56,7 @@
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
             android:padding="8dp"
-            android:text="3. Pidin rentoutumishetken, vaikka minulla olisi ollut paljon tekemistä"
+            android:text="3. Pidin lyhyen rentoutumishetken, vaikka minulla olisi ollut paljon tekemistä"
             android:textSize="12sp" />
 
         <RadioButton
@@ -64,7 +65,7 @@
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
             android:padding="8dp"
-            android:text="4. Nukuin katkoittain heikkoa unta"
+            android:text="4. Rentouduin noin tunnin, mutta tunsin huonoa omatuntoa"
             android:textSize="12sp" />
 
         <RadioButton
@@ -73,7 +74,7 @@
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
             android:padding="8dp"
-            android:text="5. Nukuin sikeästi pätkittäin, mutta heräsin useamman kerran yöllä"
+            android:text="5. Rentouduin muutaman tunnin, mutta mietin koko ajan työasioita"
             android:textSize="12sp" />
 
         <RadioButton
@@ -82,7 +83,7 @@
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
             android:padding="8dp"
-            android:text="6. Nukuin sikeästi pieniä pätkiä, mutta heräilin yön mittaan muutaman kerran"
+            android:text="6. Sain aikaa rentoutumiseen, mutta tunnen, että minun olisi pitänyt tehdä enemmän"
             android:textSize="12sp" />
 
         <RadioButton
@@ -91,7 +92,7 @@
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
             android:padding="8dp"
-            android:text="7. Nukuin sikeästi pari tuntia yöllä "
+            android:text="7. Pystyin unohtamaan pakolliset työt hetkittäin "
             android:textSize="12sp" />
 
         <RadioButton
@@ -100,7 +101,7 @@
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
             android:padding="8dp"
-            android:text="8. Sain aikaa rentoutumiseen, mutta tunnen, että minun olisi pitänyt tehdä enemmän "
+            android:text="8. Palauduin melko hyvin, mutta muutama keskeneräinen asia jäi vielä vaivaamaan"
             android:textSize="12sp" />
 
         <RadioButton
@@ -109,7 +110,7 @@
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
             android:padding="8dp"
-            android:text="9. Palauduin melko hyvin, mutta muutama keskeneräinen asia vielä vaivaa "
+            android:text="9. Palauduin päivästä, mutta olisin halunnut enemmän aikaa rentoutumiseen "
             android:textSize="12sp" />
 
         <RadioButton
@@ -135,6 +136,7 @@
         android:layout_marginRight="24dp"
         android:onClick="tulos"
         android:padding="20dp"
+        android:background="#549F6DDD"
         android:text="Laske tulos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -175,6 +177,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:onClick="palaaEtusivulle"
+        android:background="#549F6DDD"
         android:text="Etusivulle"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"

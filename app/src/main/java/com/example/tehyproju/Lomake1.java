@@ -1,3 +1,8 @@
+/**
+ *
+ * @author Reija Parvio
+ */
+
 package com.example.tehyproju;
 
 import android.content.Context;
@@ -22,11 +27,17 @@ public class Lomake1 extends AppCompatActivity {
         addListenerOnButton();
     }
 
-    public void tulos(View view) {
+
+    /**public void tulos(View view) {
         TextView arvosana = findViewById(R.id.tulos_numero);
         arvosana.setText(Integer.toString(page1.getTulos()));
-    }
+    }*/
 
+    /**
+     * Seuraavalle sivulle siirtävä metodi
+     * Button-elementtiin "seuraava sivu" asetetaan OnClickListener
+     * Button:ia painaessa luodaan ja käynnistetään uusi intent, joka siirtää halutulle sivulle
+     */
     public void addListenerOnButton() {
         final Context context = this;
         Button button = (Button) findViewById(R.id.seuraava_sivu);
@@ -40,6 +51,11 @@ public class Lomake1 extends AppCompatActivity {
         });
     }
 
+    /**
+     * Metodia kutsutaan, kun käyttäjä valitsee jonkin radioButton:in
+     * Metodi tarkistaa, mikä badioButton on valittu ja kutsuu Counters-luokan increase-metodia sen mukaisella arvolla
+     * @param view käyttäjän valitsema radiobutton
+     */
         public void onRadioButtonClicked (View view){
             boolean checked = ((RadioButton) view).isChecked();
 

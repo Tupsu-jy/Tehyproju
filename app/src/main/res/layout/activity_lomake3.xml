@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#45DBD7D7"
     tools:context=".Lomake3">
 
     <TextView
@@ -75,7 +76,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="6. Kävin kävelylenkillä/kävelin kouluun tai töihin"
+            android:text="6. Kävin lyhyellä kävelylenkillä/kävelin kouluun tai töihin"
             android:textSize="12sp" />
 
         <RadioButton
@@ -84,7 +85,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="7. Käytin koiran kunnon lenkeillä. "
+            android:text="7. Sain hyötyliikuntaa päivän mittaan jatkuvasti ja tein lyhyen lenkin "
             android:textSize="12sp" />
 
         <RadioButton
@@ -93,7 +94,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="8. Käytin koiran kunnon lenkeillä. "
+            android:text="8. Kävin kunnon lenkillä/salilla"
             android:textSize="12sp" />
 
         <RadioButton
@@ -102,7 +103,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="9. Käytin koiran kunnon lenkeillä. "
+            android:text="9. Liikuin monipuolisesti pitkin päivää "
             android:textSize="12sp" />
 
         <RadioButton
@@ -111,7 +112,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="10. Käytin koiran kunnon lenkeillä. "
+            android:text="10. Liikuin monipuolisesti ja sykkeeni oli koholla vähintään 30 min. "
             android:textSize="12sp" />
 
     </RadioGroup>
@@ -124,6 +125,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:padding="20dp"
+        android:background="#549F6DDD"
         android:shadowColor="#00575454"
         android:text="Seuraava" />
 

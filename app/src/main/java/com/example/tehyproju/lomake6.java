@@ -1,3 +1,8 @@
+/**
+ *
+ * @author Reija Parvio
+ */
+
 package com.example.tehyproju;
 
 import android.content.Context;
@@ -22,6 +27,12 @@ public class lomake6 extends AppCompatActivity {
         //addListenerOnButton();
     }
 
+    /**
+     * Metodi kutsuu counters-luokasta lopullista tulosta (get.Tulos())
+     * Metodia kutsutaan, kun käyttäjä painaa "Lake tulos" nappia
+     * Saatu numero tulostetaan textView elementtiin "arvosana"
+     * @param view Button-elementti
+     */
     public void tulos(View view){
         TextView arvosana = findViewById(R.id.tulos_numero);
         arvosana.setText(Integer.toString(page6.getTulos()));
@@ -44,6 +55,11 @@ public class lomake6 extends AppCompatActivity {
         startActivity(intent1);
     }
 
+    /**
+     * Metodia kutsutaan, kun käyttäjä valitsee jonkin radioButton:in
+     * Metodi tarkistaa, mikä badioButton on valittu ja kutsuu Counters-luokan increase-metodia sen mukaisella arvolla
+     * @param view käyttäjän valitsema radiobutton
+     */
     public void onRadioButtonClicked(View view){
         boolean checked = ((RadioButton) view).isChecked();
 
