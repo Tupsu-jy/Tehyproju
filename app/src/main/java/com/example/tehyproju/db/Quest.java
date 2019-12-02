@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey;
 import java.util.Date;
 
 
-@Entity(tableName = "quest")
+@Entity(tableName = "quest_table")
 public class Quest {
 
 
