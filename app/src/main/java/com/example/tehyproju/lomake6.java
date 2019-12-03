@@ -50,6 +50,11 @@ public class lomake6 extends AppCompatActivity {
             }
         });
     }*/
+    /**
+     * Metodi palauttaa takaisin MainActivity:yn
+     * Metodia kutsutaan, kun käyttäjä painaa nappia, jossa on se OnClick-metodina
+     * @param view button
+     */
     public void palaaEtusivulle(View view){
         Intent intent1 = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent1);
