@@ -24,12 +24,16 @@ public class Quest {
     private String date;
 
 
-    public Quest(@NonNull int pojoi, @NonNull int pid, @NonNull String pdate) {
-        this.points = pojoi;
-        this.id=pid;
-        this.date=pdate;
+    public Quest(@NonNull int points, @NonNull int id, @NonNull String date) {
+        this.points = points;
+        this.id=id;
+        this.date=date;
     }
 
     public int getPoints(){return this.points;}
+
+    public int getId(){return this.id;}
+
+    public String getDate(){return this.date;}
 }
 
