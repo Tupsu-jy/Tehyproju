@@ -25,5 +25,7 @@ public interface QDao {
     @Query("SELECT MAX(id) FROM quest_table")
     int latest();
 
+    @Query("SELECT count(*) FROM quest_table")
+    int size();
 }
 

@@ -44,13 +44,9 @@ public class Counters {
      */
     public int getTulos(){
 
-        int temp=1;
-        if(QuestRDatabase.qDao().latest()!=0){
-            temp=QuestRDatabase.qDao().latest()+1;
-        }
 
         Date d=new Date();
-        Quest newq = new Quest(this.summa, temp, ""+d);
+        Quest newq = new Quest(this.summa, QuestRDatabase.qDao().size(), ""+d);
         QuestRDatabase.qDao().insert(newq);
         return this.summa;
     }
