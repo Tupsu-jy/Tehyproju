@@ -36,6 +36,7 @@ public class Lomake5 extends AppCompatActivity {
      * Seuraavalle sivulle siirtävä metodi
      * Button-elementtiin "seuraava sivu" asetetaan OnClickListener
      * Button:ia painaessa luodaan ja käynnistetään uusi intent, joka siirtää halutulle sivulle
+     * Koodi lainattu sivulta https://www.mkyong.com/android/android-activity-from-one-screen-to-another-screen/
      */
     public void addListenerOnButton() {
         final Context context = this;
