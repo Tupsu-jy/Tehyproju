@@ -6,12 +6,17 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.tehyproju.db.QuestRDatabase;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        if (QuestRDatabase.getInstance()==null){
+            QuestRDatabase.create(getApplicationContext());
+        }
     }
     public void avaaKalenteri(View view) {
         Intent intent = new Intent(getApplicationContext(), kalenteri.class);

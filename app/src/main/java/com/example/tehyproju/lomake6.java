@@ -34,6 +34,7 @@ public class lomake6 extends AppCompatActivity {
      * @param view Button-elementti
      */
     public void tulos(View view){
+
         TextView arvosana = findViewById(R.id.tulos_numero);
         arvosana.setText(Integer.toString(page6.getTulos()));
     }

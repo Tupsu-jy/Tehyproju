@@ -21,5 +21,9 @@ public interface QDao {
 
     @Query("SELECT * from quest_table ORDER BY id ASC")
     LiveData<List<Quest>> getQuestsByOrder();
+
+    @Query("SELECT MAX(id) FROM quest_table")
+    int latest();
+
 }
 

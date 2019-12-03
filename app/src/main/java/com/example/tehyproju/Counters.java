@@ -5,6 +5,11 @@
  */
 package com.example.tehyproju;
 
+import com.example.tehyproju.db.Quest;
+import com.example.tehyproju.db.QuestRDatabase;
+
+import java.util.Date;
+
 /**
  * Singleton-luokka, jota käytetään pistemäärän laskemiseen käyttäjän valinnoista
  * Esitellään numero ja summa muuttujat ja annetaan molemmille alkuarvoksi nolla
@@ -38,8 +43,15 @@ public class Counters {
      * @return lopullinen pistemäärä
      */
     public int getTulos(){
+
+        int temp=1;
+        if(QuestRDatabase.qDao().latest()!=0){
+            temp=QuestRDatabase.qDao().latest()+1;
+        }
+
+        Date d=new Date();
+        Quest newq = new Quest(this.summa, temp, ""+d);
+        QuestRDatabase.qDao().insert(newq);
         return this.summa;
     }
-
-
 }
