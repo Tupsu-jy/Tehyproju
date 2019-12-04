@@ -43,11 +43,6 @@ public class Counters {
      * @return lopullinen pistemäärä
      */
     public int getTulos(){
-
-
-        Date d=new Date();
-        Quest newq = new Quest(this.summa, QuestRDatabase.qDao().size(), ""+d);
-        QuestRDatabase.qDao().insert(newq);
         return this.summa;
     }
 }

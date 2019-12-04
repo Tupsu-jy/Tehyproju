@@ -16,6 +16,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.tehyproju.db.Quest;
+import com.example.tehyproju.db.QuestRDatabase;
+
+import java.util.Date;
+
 public class lomake6 extends AppCompatActivity {
 
     Counters page6 = Counters.getInstance();
@@ -34,10 +39,12 @@ public class lomake6 extends AppCompatActivity {
      * @param view Button-elementti
      */
     public void tulos(View view){
-
+        /*Date d=new Date();
+        Quest newq = new Quest(page6.getTulos(), QuestRDatabase.qDao().size(), ""+d);
+        QuestRDatabase.qDao().insert(newq);
+*/
         TextView arvosana = findViewById(R.id.tulos_numero);
         arvosana.setText(Integer.toString(page6.getTulos()));
-
 
     }
 
