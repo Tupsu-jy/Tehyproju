@@ -8,6 +8,7 @@ package com.example.tehyproju;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -43,6 +44,7 @@ public class lomake6 extends AppCompatActivity {
         Quest newq = new Quest(page6.getTulos(), QuestRDatabase.qDao().size(), ""+d);
         QuestRDatabase.qDao().insert(newq);
 */
+        //System.out.println(Integer.toString(page6.getTulos()));
         TextView arvosana = findViewById(R.id.tulos_numero);
         arvosana.setText(Integer.toString(page6.getTulos()));
 
