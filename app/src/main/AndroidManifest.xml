@@ -9,16 +9,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".vinkit"></activity>
-        <activity android:name=".kalenteri" />
-        <activity android:name=".lomake6"/>
-        <activity android:name=".Lomake5" />
-        <activity android:name=".Lomake4" />
-        <activity android:name=".Lomake3" />
-        <activity android:name=".Lomake2" />
-        <activity android:name=".Lomake1"/>
-        <activity android:name=".Graph"/>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".vinkit"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".kalenteri"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".lomake6"
+            android:parentActivityName=".Lomake5">
+        </activity>
+        <activity
+            android:name=".Lomake5"
+            android:parentActivityName=".Lomake4">
+        </activity>
+        <activity
+            android:name=".Lomake4"
+            android:parentActivityName=".Lomake3">
+        </activity>
+        <activity android:name=".Lomake3"
+            android:parentActivityName=".Lomake2">
+        </activity>
+        <activity android:name=".Lomake2"
+            android:parentActivityName=".Lomake1">
+        </activity>
+        <activity
+            android:name=".Lomake1"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".Graph"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
