@@ -32,4 +32,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent2 = new Intent(getApplicationContext(), vinkit.class);
         startActivity(intent2);
     }
+    public void linkkeja(View view) {
+        Intent intent3 = new Intent(getApplicationContext(), linkkeja.class);
+        startActivity(intent3);
+    }
 }
