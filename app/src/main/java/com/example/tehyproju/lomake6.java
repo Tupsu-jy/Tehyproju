@@ -42,12 +42,11 @@ public class lomake6 extends AppCompatActivity {
      * @param view Button-elementti
      */
     public void tulos(View view){
-        System.out.println(temp.size()+" adasdasdasdasddas");
         Date d=new Date();
-        Quest newq = new Quest(page6.getTulos(), temp.size(), "qweqwe");
+        Quest newq = new Quest(page6.getTulos(), temp.size(), d.toString());
         QuestRDatabase.getInstance().qDao().insert(newq);
 
-        System.out.println(temp.size()+" adasdasdasdasddas");
+
         TextView arvosana = findViewById(R.id.tulos_numero);
         arvosana.setText(Integer.toString(page6.getTulos()));
 
