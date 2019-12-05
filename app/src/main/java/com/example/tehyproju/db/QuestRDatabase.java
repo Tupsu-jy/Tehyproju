@@ -10,9 +10,7 @@ import androidx.room.RoomDatabase;
 public abstract class QuestRDatabase extends RoomDatabase {
     private static QuestRDatabase ourInstance = null;
 
-    public static QDao qDao() {
-        return null;
-    }
+    public abstract QDao qDao();
 
     static public QuestRDatabase getInstance() {
         return ourInstance;
@@ -21,8 +19,9 @@ public abstract class QuestRDatabase extends RoomDatabase {
 
     public static void create(Context c){
         ourInstance=Room.databaseBuilder(c.getApplicationContext(),
-                QuestRDatabase.class, "quest_database")
+                QuestRDatabase.class, "quest_database").allowMainThreadQueries()
                 .build();
+        ourInstance.qDao().insert(new Quest(0,0,"qwe"));
     }
 
 }
