@@ -1,3 +1,8 @@
+/**
+ * @author Heini Näppä
+ * @version 9.12.2019
+ */
+
 package com.example.tehyproju;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +19,10 @@ public class vinkit extends AppCompatActivity {
 
     public static final String EXTRA = "com.example.myfirstapp.MESSAGE";
 
-//avataan vinkkilista
+    /**avataan vinkkilista
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +37,11 @@ public class vinkit extends AppCompatActivity {
                 android.R.layout.simple_list_item_1,
                 vinkkisingle.getInstance().getVinkit()));
 
-//siirrytään halutun vinkin sisältöön
+/**siirrytään halutun vinkin sisältöön Intent:in avulla
+ * Uusi Intent käynnistyy, kun käyttäjä painaa listan objektia
+ * Oikea sisältö avataan muuttujan i avulla
+ * @param view listan oblekti
+ */
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

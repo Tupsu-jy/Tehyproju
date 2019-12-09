@@ -1,3 +1,8 @@
+/**
+ * @author Heini Näppä
+ * @version 9.12.2019
+ */
+
 package com.example.tehyproju;
 
         import androidx.appcompat.app.AppCompatActivity;
@@ -7,7 +12,11 @@ package com.example.tehyproju;
 
 public class vinkitView extends AppCompatActivity {
 
-//koodi, jolla saadaan näkymään singleton luokkaan listattujen vinkkien otsikko ja sisältö omalla sivullaan (activity_view_vinkit)
+    /**
+     * koodi, jolla saadaan näkymään singleton luokkaan listattujen vinkkien otsikko ja sisältö omalla sivullaan (activity_view_vinkit)
+     * ohjelma avaa oikean objektin listalta muuttujalla i
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

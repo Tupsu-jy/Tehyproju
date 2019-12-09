@@ -1,19 +1,32 @@
+/**
+ * @author Heini Näppä
+ * @version 9.12.2019
+ */
+
 package com.example.tehyproju;
 
 import java.util.ArrayList;
 import java.util.List;
 
-//luodaan singelton luokka vinkeille, josta siis jokainen näkyy omalla sivullaan (activity_view_vinkit)
+/**luodaan singelton luokka vinkeille, joista siis jokainen näkyy omalla sivullaan (activity_view_vinkit)
+ * määritellään vinkeille lista, johon ne kasataan
+ */
 class vinkkisingle {
     private static final vinkkisingle ourInstance = new vinkkisingle();
 
-//määritellään vinkeille lista, johon ne kasataan
     private List<Vinkki> vinkit;
+
+    /**
+     *
+     * @return ourInstance
+     */
     static vinkkisingle getInstance() {
         return ourInstance;
     }
 
-//määritellään listan sisältö
+    /** Luodaan uusi lista
+     * määritellään listan sisältö
+     */
     private vinkkisingle() {
         vinkit = new ArrayList<Vinkki>();
 
@@ -30,7 +43,10 @@ class vinkkisingle {
 
     }
 
-//metodit, jolla palautetaan listan sisältö sekä sisältö omalla indeksillään
+    /**
+     * metodit, jolla palautetaan listan sisältö sekä sisältö omalla indeksillään
+     * @return Vinkki-lista sekä käyttäjän valitsema indeksi
+     */
     public List<Vinkki> getVinkit() {
         return vinkit;
     }

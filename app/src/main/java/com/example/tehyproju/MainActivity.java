@@ -1,6 +1,5 @@
 /**Käyttäjän valitseman nappi käynnistää intentin valittuun activity:yn
- * Edellinen kyselytulos nollataan aina, kun lomake avataan uudestaan
- * @author Reija Parvio & Heini Näppä
+ * @author Reija Parvio & Heini Näppä & Jaakko Ylinen
  */
 
 package com.example.tehyproju;
@@ -16,6 +15,7 @@ import com.example.tehyproju.db.QuestRDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -26,24 +26,44 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /** Ohjelma avaa Graph-luokan, kun käyttäjä painaa nappia
+     * Napin painallus aloittaa uuden Intent:in
+     * @param view button-elementti
+     */
     public void avaaKaavio(View view) {
         Intent intent = new Intent(getApplicationContext(), Graph.class);
         startActivity(intent);
     }
+
+    /** Ohjelma nollaa kaikki käyttäjän sille syöttämät tiedot, kun käyttäjä painaa nappia
+     * @param v button-elementti
+     */
     public void delete(View v){
         QuestRDatabase.getInstance().qDao().deleteAll();
     }
 
+    /** Ohjelma avaa Lomake1-luokan, kun käyttäjä painaa nappia
+     * Napin painallus aloittaa uuden Intent:in
+     * @param view button-elementti
+     */
     public void lisaaMerkinta(View view){
         Intent intent1 = new Intent(getApplicationContext(), Lomake1.class);
         startActivity(intent1);
-
     }
 
+    /** Ohjelma avaa vinkit-luokan, kun käyttäjä painaa nappia
+     * Napin painallus aloittaa uuden Intent:in
+     * @param view button-elementti
+     */
     public void vinkit(View view){
         Intent intent2 = new Intent(getApplicationContext(), vinkit.class);
         startActivity(intent2);
     }
+
+    /** Ohjelma avaa linkkeja-luokan, kun käyttäjä painaa nappia
+     * Napin painallus aloittaa uuden Intent:in
+     * @param view button-elementti
+     */
     public void linkkeja(View view) {
         Intent intent3 = new Intent(getApplicationContext(), linkkeja.class);
         startActivity(intent3);
