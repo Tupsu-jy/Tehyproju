@@ -20,11 +20,6 @@ public class MainActivity extends AppCompatActivity {
             QuestRDatabase.create(getApplicationContext());
         }
     }
-    public void avaaKalenteri(View view) {
-        Intent intent = new Intent(getApplicationContext(), Graph.class);
-        startActivity(intent);
-    }
-
     public void lisaaMerkinta(View view){
         Intent intent1 = new Intent(getApplicationContext(), Lomake1.class);
         startActivity(intent1);

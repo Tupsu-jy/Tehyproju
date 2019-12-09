@@ -29,9 +29,6 @@
             android:name=".vinkit"
             android:parentActivityName=".MainActivity"></activity>
         <activity
-            android:name=".kalenteri"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity
             android:name=".lomake6"
             android:parentActivityName=".Lomake5"></activity>
         <activity
