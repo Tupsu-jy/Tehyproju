@@ -87,7 +87,7 @@
         android:background="#549F6DDD"
         android:onClick="linkkeja"
         android:padding="20dp"
-        android:text="Linkkejä"
+        android:text="Apua muualta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vinkit" />
