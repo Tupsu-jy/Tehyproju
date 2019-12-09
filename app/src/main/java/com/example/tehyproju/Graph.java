@@ -30,7 +30,8 @@ public class Graph extends AppCompatActivity {
 
     /**
      * Metodi jonka avulla kaavio luodaan ja täytetään datalla.
-     * Kyselyt haetaan tietokannasta siinä järjestyksessä kuin ne on sinne lisätty
+     * Kyselyt haetaan tietokannasta siinä järjestyksessä kuin ne on sinne lisätty.
+     * Kaavion merkeiksi kustomoidaan kyselyn päivämäärä
      * @param savedInstanceState no se justiinsa
      */
     @Override
