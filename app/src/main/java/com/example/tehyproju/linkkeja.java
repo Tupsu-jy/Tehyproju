@@ -35,6 +35,12 @@ public class linkkeja extends AppCompatActivity {
         Button kolmas_linkki = (Button) findViewById(R.id.linkki3);
         Button neljas_linkki = (Button) findViewById(R.id.linkki4);
 
+        /**
+         * Linkki button:iin asetetaan OnClickListener
+         * napin painamiseen lisätään intent, jonka taakse asetetaan linkki, jonka halutaan avautuvan
+         * Uusi aktivity aloitetaan linkin painalluksella
+         * @param arg0
+         */
         eka_linkki.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -70,13 +76,7 @@ public class linkkeja extends AppCompatActivity {
                 startActivity(openLinkIntent);
             }
         });
-        //eka_linkki.setText(Html.fromHtml("Tietoa: <a href=\"https://www.kaikkisyovasta.fi/elama-syovan-kanssa/syopaan-sairastuneelle/potilaan-polku/\">Kaikki Syövästä</a>"));
 
-        //toka_linkki.setText(Html.fromHtml("Vertaistukea: <a href=\"https://www.etela-suomensyopayhdistys.fi/neuvonta-ja-tuki/vertaistuki/\">Etelä-Suomen Syöpäyhdistys</a>"));
-
-        //kolmas_linkki.setText(Html.fromHtml("Elämää syövän kanssa: <a href=\"https://syopajatyo.fi/\">Minä, Syöpä ja Työ</a>"));
-
-        //neljas_linkki.setText(Html.fromHtml("Tukihenkilötoiminta: <a href=\"https://www.syopajarjestot.fi/toiminta/vapaaehtoistoiminta/\">Syöpäjärjestöt</a>"));
 
     }
 }
