@@ -6,6 +6,7 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Dao
@@ -20,7 +21,7 @@ public interface QDao {
     void deleteAll();
 
     @Query("SELECT * from quest_table ORDER BY id ASC")
-    LiveData<List<Quest>> getQuestsByOrder();
+    Quest[] getQuestsByOrder();
 
     @Query("SELECT MAX(id) FROM quest_table")
     int latest();

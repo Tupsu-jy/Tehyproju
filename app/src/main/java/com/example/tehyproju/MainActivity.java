@@ -2,6 +2,7 @@ package com.example.tehyproju;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if (QuestRDatabase.getInstance()==null){
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void avaaKalenteri(View view) {
-        Intent intent = new Intent(getApplicationContext(), kalenteri.class);
+        Intent intent = new Intent(getApplicationContext(), Graph.class);
         startActivity(intent);
     }
 
