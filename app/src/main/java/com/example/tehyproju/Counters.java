@@ -45,10 +45,6 @@ public class Counters {
         return this.summa;
     }
 
-<<<<<<< HEAD
-    public void setZero(){
-        this.summa=0;
-=======
     /**
      * Metodi nollaa tuloksen takaisin nollaksi
      * Metodia kutsutaan aina kun kyselylomake avataan etusivulta
@@ -56,6 +52,5 @@ public class Counters {
     public void reset(){
         this.numero = 0;
         this.summa = 0;
->>>>>>> da64b44f82dba2f6d10ceb6bba39339db965e11d
     }
 }

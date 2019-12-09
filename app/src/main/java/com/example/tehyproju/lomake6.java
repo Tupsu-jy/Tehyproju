@@ -61,7 +61,7 @@ public class lomake6 extends AppCompatActivity {
      * @param view button
      */
     public void palaaEtusivulle(View view){
-        page6.setZero();
+        page6.reset();
         Intent intent1 = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent1);
     }

@@ -42,13 +42,9 @@
         android:id="@+id/merkinta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
         android:layout_marginTop="32dp"
-=======
-        android:layout_marginTop="16dp"
->>>>>>> da64b44f82dba2f6d10ceb6bba39339db965e11d
         android:background="#549F6DDD"
         android:onClick="lisaaMerkinta"
         android:padding="20dp"
@@ -60,23 +56,13 @@
         android:id="@+id/kalenteri"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-=======
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
->>>>>>> da64b44f82dba2f6d10ceb6bba39339db965e11d
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
         android:background="#549F6DDD"
         android:onClick="avaaKalenteri"
         android:padding="20dp"
         android:text="Kaavio"
-        app:layout_constraintBottom_toTopOf="@+id/vinkit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
@@ -84,44 +70,27 @@
         android:id="@+id/vinkit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-=======
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
->>>>>>> da64b44f82dba2f6d10ceb6bba39339db965e11d
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
         android:background="#549F6DDD"
         android:onClick="vinkit"
         android:padding="20dp"
         android:text="Vinkit"
-<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent"
-=======
-        app:layout_constraintBottom_toTopOf="@+id/linkit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
->>>>>>> da64b44f82dba2f6d10ceb6bba39339db965e11d
         app:layout_constraintTop_toBottomOf="@+id/kalenteri" />
 
     <Button
         android:id="@+id/linkit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
         android:layout_marginTop="24dp"
-=======
-        android:layout_marginBottom="16dp"
->>>>>>> da64b44f82dba2f6d10ceb6bba39339db965e11d
         android:background="#549F6DDD"
         android:onClick="linkkeja"
         android:padding="20dp"
         android:text="Linkkejä"
-<<<<<<< HEAD
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/merkinta" />
 
@@ -144,11 +113,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linkit"
         tools:visibility="visible" />
-=======
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
->>>>>>> da64b44f82dba2f6d10ceb6bba39339db965e11d
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
