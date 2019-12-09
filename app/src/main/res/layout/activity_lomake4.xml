@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:onClick="onRadioButtonClicked"
-            android:text="4. Söin "
+            android:text="4. Söin suhteellisen säännöllisesti, mutta vain herkkuja ja roskaruokaa"
             android:textSize="12sp" />
 
         <RadioButton

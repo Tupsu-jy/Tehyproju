@@ -1,5 +1,6 @@
 /**
- *
+ * Luokka näyttää käyttäjälle RadioButton vaihtoehdot ja
+ * laskee pistemäärän käyttäjän valitsemasta RadioButton vaihtoehdosta
  * @author Reija Parvio
  */
 
