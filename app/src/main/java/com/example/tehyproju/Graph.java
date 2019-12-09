@@ -21,20 +21,26 @@ import com.jjoe64.graphview.series.PointsGraphSeries;
 
 import java.text.SimpleDateFormat;
 
+/**
+ * Luokka jonka avulla kaavio luodaan ja täytetään datalla.
+ * @author Jaakko Ylinen
+ * @version 9.12.2019
+ */
 public class Graph extends AppCompatActivity {
 
+    /**
+     * Metodi jonka avulla kaavio luodaan ja täytetään datalla.
+     * Kyselyt haetaan tietokannasta siinä järjestyksessä kuin ne on sinne lisätty
+     * @param savedInstanceState no se justiinsa
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //Log.d("MyApp","I am here1111");
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.graph);
 
         QDao dao=QuestRDatabase.getInstance().qDao();
 
         final Quest[] quests=dao.getQuestsByOrder();
-        //Log.i("gra", "gggg");
-
         DataPoint[] data= new DataPoint[quests.length];
 
         for (int i = 0; i < quests.length; i++){
@@ -44,21 +50,7 @@ public class Graph extends AppCompatActivity {
         GraphView graph = (GraphView) findViewById(R.id.graph);
         graph.setVisibility(View.VISIBLE);
 
-        graph.getGridLabelRenderer().setLabelFormatter(new DefaultLabelFormatter() {
-            @Override
-            public String formatLabel(double value, boolean isValueX) {
-                if (isValueX) {
-                    // show normal x values
-                    return super.formatLabel(value, isValueX);
-                } else {
-                    // show currency for y values
-                    return super.formatLabel(value, isValueX);
-                }
-            }
-        });
-
         PointsGraphSeries<DataPoint> series = new PointsGraphSeries<DataPoint>(data);
-
         series.setCustomShape(new PointsGraphSeries.CustomShape() {
             @Override
             public void draw(Canvas canvas, Paint paint, float x, float y, DataPointInterface dataPoint) {
@@ -72,7 +64,6 @@ public class Graph extends AppCompatActivity {
                 canvas.drawText("X "+date, x, y, paint);
             }
         });
-
 
         graph.addSeries(series);
     }

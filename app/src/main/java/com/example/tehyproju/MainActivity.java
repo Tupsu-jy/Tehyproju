@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void avaaKalenteri(View view) {
+    public void avaaKaavio(View view) {
         Intent intent = new Intent(getApplicationContext(), Graph.class);
         startActivity(intent);
     }
