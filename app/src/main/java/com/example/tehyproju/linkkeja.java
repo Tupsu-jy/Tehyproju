@@ -6,14 +6,12 @@
 
 package com.example.tehyproju;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
-import android.text.Spanned;
-import android.text.method.LinkMovementMethod;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,8 +21,6 @@ public class linkkeja extends AppCompatActivity {
 
     /**
      * Linkkien activity:stä otetaan TextView:t talteen muuttujiin
-     * Muuttujille asetetaan halutut linkit setText:llä
-     * Mallia otettu blogista https://www.locked.de/how-to-make-html-links-in-android-text-view-work/
      * @param savedInstanceState
      */
     @Override
@@ -32,26 +28,53 @@ public class linkkeja extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_linkkeja);
 
-        TextView eka_linkki = (TextView)findViewById(R.id.linkki1);
-        TextView toka_linkki = (TextView)findViewById(R.id.linkki2);
-        TextView kolmas_linkki = (TextView)findViewById(R.id.linkki3);
-        TextView neljas_linkki = (TextView)findViewById(R.id.linkki4);
+        Button eka_linkki = (Button) findViewById(R.id.linkki1);
+        Button toka_linkki = (Button) findViewById(R.id.linkki2);
+        Button kolmas_linkki = (Button) findViewById(R.id.linkki3);
+        Button neljas_linkki = (Button) findViewById(R.id.linkki4);
 
-        /**eka_linkki.setOnClickListener(new View.OnClickListener() {
+        /**
+         * Linkki button:iin asetetaan OnClickListener
+         * napin painamiseen lisätään intent, jonka taakse asetetaan linkki, jonka halutaan avautuvan
+         * Uusi aktivity aloitetaan linkin painalluksella
+         * @param arg0
+         */
+        eka_linkki.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 Intent openLinkIntent = new Intent(Intent.ACTION_VIEW,
                         Uri.parse("https://www.kaikkisyovasta.fi/elama-syovan-kanssa/syopaan-sairastuneelle/potilaan-polku/"));
                 startActivity(openLinkIntent);
             }
-        });*/
-        eka_linkki.setText(Html.fromHtml("Tietoa: <a href=\"https://www.kaikkisyovasta.fi/elama-syovan-kanssa/syopaan-sairastuneelle/potilaan-polku/\">Kaikki Syövästä</a>"));
+        });
 
-        toka_linkki.setText(Html.fromHtml("Vertaistukea: <a href=\"https://www.etela-suomensyopayhdistys.fi/neuvonta-ja-tuki/vertaistuki/\">Etelä-Suomen Syöpäyhdistys</a>"));
+        toka_linkki.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent openLinkIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://www.etela-suomensyopayhdistys.fi/neuvonta-ja-tuki/vertaistuki/"));
+                startActivity(openLinkIntent);
+            }
+        });
 
-        kolmas_linkki.setText(Html.fromHtml("Elämää syövän kanssa: <a href=\"https://syopajatyo.fi/\">Minä, Syöpä ja Työ</a>"));
+        kolmas_linkki.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent openLinkIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://syopajatyo.fi/"));
+                startActivity(openLinkIntent);
+            }
+        });
 
-        neljas_linkki.setText(Html.fromHtml("Tukihenkilötoiminta: <a href=\"https://www.syopajarjestot.fi/toiminta/vapaaehtoistoiminta/\">Syöpäjärjestöt</a>"));
+        neljas_linkki.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent openLinkIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://www.syopajarjestot.fi/toiminta/vapaaehtoistoiminta/"));
+                startActivity(openLinkIntent);
+            }
+        });
+
 
     }
 }

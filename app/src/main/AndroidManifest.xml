@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tehyproju">
+    <uses-permission android:name="android.Manifest.permission.CALL_PHONE"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -26,9 +27,6 @@
         </activity>
         <activity
             android:name=".vinkit"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity
-            android:name=".kalenteri"
             android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".lomake6"

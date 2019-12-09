@@ -1,3 +1,8 @@
+/**Käyttäjän valitseman nappi käynnistää intentin valittuun activity:yn
+ * Edellinen kyselytulos nollataan aina, kun lomake avataan uudestaan
+ * @author Reija Parvio & Heini Näppä
+ */
+
 package com.example.tehyproju;
 
 import android.content.Intent;
@@ -11,6 +16,8 @@ import com.example.tehyproju.db.QuestRDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
+    Counters page0 = Counters.getInstance();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -20,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             QuestRDatabase.create(getApplicationContext());
         }
     }
+<<<<<<< HEAD
     public void avaaKalenteri(View view) {
         Intent intent = new Intent(getApplicationContext(), Graph.class);
         startActivity(intent);
@@ -28,9 +36,12 @@ public class MainActivity extends AppCompatActivity {
         QuestRDatabase.getInstance().qDao().deleteAll();
     }
 
+=======
+>>>>>>> da64b44f82dba2f6d10ceb6bba39339db965e11d
     public void lisaaMerkinta(View view){
         Intent intent1 = new Intent(getApplicationContext(), Lomake1.class);
         startActivity(intent1);
+        page0.reset();
     }
 
     public void vinkit(View view){
