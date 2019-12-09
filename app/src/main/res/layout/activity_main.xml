@@ -66,7 +66,7 @@
         android:background="#549F6DDD"
         android:onClick="avaaKalenteri"
         android:padding="20dp"
-        android:text="Kalenteri"
+        android:text="Kaavio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
