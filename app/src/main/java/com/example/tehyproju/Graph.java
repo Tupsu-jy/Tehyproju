@@ -32,7 +32,7 @@ public class Graph extends AppCompatActivity {
         DataPoint[] data= new DataPoint[quests.length];
 
         for (int i = 0; i < quests.length; i++){
-            data[i]=new DataPoint(quests[i].getDate(), ((double) quests[i].getPoints()));
+            data[i]=new DataPoint(((double) quests[i].getId()), ((double) quests[i].getPoints()));
         }
 
         GraphView graph = (GraphView) findViewById(R.id.graph);
