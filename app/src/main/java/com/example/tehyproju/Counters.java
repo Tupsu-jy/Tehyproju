@@ -45,4 +45,8 @@ public class Counters {
     public int getTulos(){
         return this.summa;
     }
+
+    public void setZero(){
+        this.summa=0;
+    }
 }

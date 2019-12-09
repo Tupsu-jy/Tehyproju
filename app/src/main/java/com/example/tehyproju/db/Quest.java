@@ -5,6 +5,8 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import com.example.tehyproju.DateConverter;
+
 import java.util.Date;
 
 
@@ -21,10 +23,10 @@ public class Quest {
     private int id;
 
     @ColumnInfo(name = "date")
-    private String date;
+    private Long date;
 
 
-    public Quest(@NonNull int points, @NonNull int id, @NonNull String date) {
+    public Quest(@NonNull int points, @NonNull int id, @NonNull Long date) {
         this.points = points;
         this.id=id;
         this.date=date;
@@ -34,6 +36,6 @@ public class Quest {
 
     public int getId(){return this.id;}
 
-    public String getDate(){return this.date;}
+    public Long getDate(){return this.date;}
 }
 

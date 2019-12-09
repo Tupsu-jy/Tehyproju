@@ -6,7 +6,7 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities = {Quest.class}, version = 1, exportSchema = false)
+@Database(entities = {Quest.class}, version = 2, exportSchema = false)
 public abstract class QuestRDatabase extends RoomDatabase {
     private static QuestRDatabase ourInstance = null;
 
@@ -20,8 +20,9 @@ public abstract class QuestRDatabase extends RoomDatabase {
     public static void create(Context c){
         ourInstance=Room.databaseBuilder(c.getApplicationContext(),
                 QuestRDatabase.class, "quest_database").allowMainThreadQueries()
+                .fallbackToDestructiveMigration()
                 .build();
-        ourInstance.qDao().insert(new Quest(0,0,"qwe"));
+        //ourInstance.qDao().insert(new Quest(0,0,0));
     }
 
 }

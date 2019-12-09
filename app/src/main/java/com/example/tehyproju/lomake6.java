@@ -26,9 +26,10 @@ import java.util.Date;
 
 public class lomake6 extends AppCompatActivity {
 
+
     Counters page6 = Counters.getInstance();
     QDao temp=QuestRDatabase.getInstance().qDao();
-
+    int newid=temp.size();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,12 +45,12 @@ public class lomake6 extends AppCompatActivity {
      */
     public void tulos(View view){
         Date d=new Date();
-        Quest newq = new Quest(page6.getTulos(), temp.size(), d.toString());
+        Quest newq = new Quest(page6.getTulos(), newid, DateConverter.fromDate(d));
         QuestRDatabase.getInstance().qDao().insert(newq);
-
 
         TextView arvosana = findViewById(R.id.tulos_numero);
         arvosana.setText(Integer.toString(page6.getTulos()));
+
 
     }
 
@@ -71,6 +72,7 @@ public class lomake6 extends AppCompatActivity {
      * @param view button
      */
     public void palaaEtusivulle(View view){
+        page6.setZero();
         Intent intent1 = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent1);
     }

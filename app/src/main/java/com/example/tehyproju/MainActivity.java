@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), Graph.class);
         startActivity(intent);
     }
+    public void delete(View v){
+        QuestRDatabase.getInstance().qDao().deleteAll();
+    }
 
     public void lisaaMerkinta(View view){
         Intent intent1 = new Intent(getApplicationContext(), Lomake1.class);
