@@ -21,8 +21,6 @@ public class linkkeja extends AppCompatActivity {
 
     /**
      * Linkkien activity:stä otetaan TextView:t talteen muuttujiin
-     * Muuttujille asetetaan halutut linkit setText:llä
-     * Mallia otettu blogista https://www.locked.de/how-to-make-html-links-in-android-text-view-work/
      * @param savedInstanceState
      */
     @Override

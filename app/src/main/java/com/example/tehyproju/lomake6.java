@@ -2,6 +2,7 @@
  * Luokka näyttää käyttäjälle RadioButton vaihtoehdot ja
  * laskee pistemäärän käyttäjän valitsemasta RadioButton vaihtoehdosta
  * @author Reija Parvio
+ * @version 9.12.2019
  */
 
 package com.example.tehyproju;
@@ -53,18 +54,6 @@ public class lomake6 extends AppCompatActivity {
 
     }
 
-    /**public void addListenerOnButton() {
-        final Context context = this;
-        Button button = (Button) findViewById(R.id.seuraava_sivu);
-        button.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View arg0) {
-                Intent intent = new Intent(context, lomake6.class);
-                startActivity(intent);
-            }
-        });
-    }*/
     /**
      * Metodi palauttaa takaisin MainActivity:yn
      * Metodia kutsutaan, kun käyttäjä painaa nappia, jossa on se OnClick-metodina

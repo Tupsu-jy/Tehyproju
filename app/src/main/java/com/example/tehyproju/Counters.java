@@ -1,7 +1,6 @@
 /**
  * @author Reija Parvio
- * @version
- *
+ * @version 9.12.2019
  */
 package com.example.tehyproju;
 
@@ -29,7 +28,7 @@ public class Counters {
         /**lisää valitun vaihtoehdon pistemäärät lopulliseen pistesaldoon
          * Metodia kutsutaan aina, kun käyttäjä valitsee radiobutton:in
          *
-         * @param numero vastauksesta saatu pistemäärä
+         * @param numero käyttäjän valinnasta saatu pistemäärä
          */
     }
     public void increase(int numero){
@@ -44,5 +43,10 @@ public class Counters {
      */
     public int getTulos(){
         return this.summa;
+    }
+
+    public void reset(){
+        this.numero = 0;
+        this.summa = 0;
     }
 }

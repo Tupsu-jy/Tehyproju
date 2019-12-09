@@ -2,6 +2,7 @@
  * Luokka näyttää käyttäjälle RadioButton vaihtoehdot ja
  * laskee pistemäärän käyttäjän valitsemasta RadioButton vaihtoehdosta
  * @author Reija Parvio
+ * @version 9.12.2019
  */
 
 package com.example.tehyproju;
@@ -27,12 +28,6 @@ public class Lomake1 extends AppCompatActivity {
         setContentView(R.layout.activity_lomake1);
         addListenerOnButton();
     }
-
-
-    /**public void tulos(View view) {
-        TextView arvosana = findViewById(R.id.tulos_numero);
-        arvosana.setText(Integer.toString(page1.getTulos()));
-    }*/
 
     /**
      * Seuraavalle sivulle siirtävä metodi
