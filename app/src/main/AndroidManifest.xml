@@ -29,6 +29,9 @@
             android:name=".vinkit"
             android:parentActivityName=".MainActivity"></activity>
         <activity
+            android:name=".vinkitView"
+            android:parentActivityName=".vinkit"></activity>
+        <activity
             android:name=".lomake6"
             android:parentActivityName=".Lomake5"></activity>
         <activity

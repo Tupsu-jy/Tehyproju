@@ -42,13 +42,13 @@
         android:id="@+id/merkinta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:background="#549F6DDD"
         android:onClick="lisaaMerkinta"
         android:padding="20dp"
         android:text="Ota kysely"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
@@ -56,43 +56,41 @@
         android:id="@+id/kalenteri"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginTop="24dp"
         android:background="#549F6DDD"
         android:onClick="avaaKaavio"
         android:padding="20dp"
         android:text="Kaavio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintEnd_toStartOf="@+id/vinkit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/merkinta" />
 
     <Button
         android:id="@+id/vinkit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
         android:background="#549F6DDD"
         android:onClick="vinkit"
         android:padding="20dp"
         android:text="Vinkit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kalenteri" />
+        app:layout_constraintTop_toBottomOf="@+id/merkinta" />
 
     <Button
         android:id="@+id/linkit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
         android:layout_marginTop="24dp"
         android:background="#549F6DDD"
         android:onClick="linkkeja"
         android:padding="20dp"
         android:text="Linkkejä"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/merkinta" />
+        app:layout_constraintTop_toBottomOf="@+id/vinkit" />
 
     <Button
         android:id="@+id/delete"
@@ -105,10 +103,12 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="24dp"
-        android:background="@android:color/holo_red_dark"
+        android:background="#C6CC0000"
         android:onClick="delete"
-        android:text="Poista kaikki kyselyt"
+        android:padding="10dp"
+        android:text="Tyhjennä aiemmat tiedot"
         android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linkit"
@@ -128,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="201dp" />
+        app:layout_constraintGuide_begin="155dp" />
 
     <TextView
         android:id="@+id/textView2"
