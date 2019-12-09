@@ -16,8 +16,6 @@ import com.example.tehyproju.db.QuestRDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    Counters page0 = Counters.getInstance();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
