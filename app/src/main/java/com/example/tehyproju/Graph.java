@@ -27,7 +27,11 @@ import java.text.SimpleDateFormat;
  * @version 9.12.2019
  */
 public class Graph extends AppCompatActivity {
-
+    QDao dao;
+    Quest[] quests;
+    DataPoint[] data;
+    GraphView graph;
+    PointsGraphSeries<DataPoint> series;
     /**
      * Metodi jonka avulla kaavio luodaan ja täytetään datalla.
      * Kyselyt haetaan tietokannasta siinä järjestyksessä kuin ne on sinne lisätty.
@@ -39,21 +43,27 @@ public class Graph extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.graph);
 
-        QDao dao=QuestRDatabase.getInstance().qDao();
+        dao=QuestRDatabase.getInstance().qDao();
 
-        final Quest[] quests=dao.getQuestsByOrder(); // Taulukusta haetaan kyselyt järjestyksessä
-        DataPoint[] data= new DataPoint[quests.length];
+        quests=dao.getQuestsByOrder(); // Taulukusta haetaan kyselyt järjestyksessä
+        data= new DataPoint[quests.length];
 
         for (int i = 0; i < quests.length; i++){
             data[i]=new DataPoint(( quests[i].getId()), ((double) quests[i].getPoints()));
             //data taulukkoon laiteteaan Datapoint olioita joiden arvot ovat kydelyn id ja pisteet
         }
 
-        GraphView graph = (GraphView) findViewById(R.id.graph);
+        graph = (GraphView) findViewById(R.id.graph);
         graph.setVisibility(View.VISIBLE);
 
-        PointsGraphSeries<DataPoint> series = new PointsGraphSeries<DataPoint>(data);
+        series = new PointsGraphSeries<DataPoint>(data);
         //seuraavaksi customoidan kaavion merkit
+        customize();
+        minmax();
+        graph.addSeries(series);
+    }
+
+    public void customize(){
         series.setCustomShape(new PointsGraphSeries.CustomShape() {
             @Override
             public void draw(Canvas canvas, Paint paint, float x, float y, DataPointInterface dataPoint) {
@@ -70,20 +80,16 @@ public class Graph extends AppCompatActivity {
                 //laitetaan X merkkaamaan tarkemmin mihin kohtaan viitataan
             }
         });
-        minmax(graph, quests.length);
-        graph.addSeries(series);
     }
     /**
      * Metodi jonka avulla kaaviolle asetetaan minimi ja maximi arvot
-     * @param graph kaavio jonka arvoja muokataan
-     * @param length kyselyiden määrä
      */
-    public void minmax(GraphView graph, int length){
+    public void minmax(){
 
         graph.getViewport().setXAxisBoundsManual(true);
         graph.getViewport().setYAxisBoundsManual(true);
         graph.getViewport().setMinX(0);
-        graph.getViewport().setMaxX(length+2);
+        graph.getViewport().setMaxX(quests.length+2);
 
         graph.getViewport().setMinY(0);
         graph.getViewport().setMaxY(65);
