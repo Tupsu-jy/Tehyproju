@@ -33,6 +33,7 @@ public class Lomake2 extends AppCompatActivity {
     /**
      * Seuraavalle sivulle siirtävä metodi
      * Button-elementtiin "seuraava sivu" asetetaan OnClickListener
+     * If lause varmistaa että käyttäjä ei pääse seuraavaan kysymyskeen jos ei ole vastannut mitään
      * Button:ia painaessa luodaan ja käynnistetään uusi intent, joka siirtää halutulle sivulle
      * Koodi lainattu sivulta https://www.mkyong.com/android/android-activity-from-one-screen-to-another-screen/
      */
@@ -53,7 +54,8 @@ public class Lomake2 extends AppCompatActivity {
 
     /**
      * Metodia kutsutaan, kun käyttäjä valitsee jonkin radioButton:in
-     * Metodi tarkistaa, mikä badioButton on valittu ja kutsuu Counters-luokan increase-metodia sen mukaisella arvolla
+     * Metodi tarkistaa, mikä badioButton on valittu ja muokkaa Counters-luokan vaustaukset taulukkoa
+     * sille kuuluvalla kohdalla valitun vastauksen mukaisella arvolla
      * @param view käyttäjän valitsema radiobutton
      */
     public void onRadioButtonClicked(View view){

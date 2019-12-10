@@ -14,7 +14,6 @@ import java.util.Date;
  * Esitellään numero ja summa muuttujat ja annetaan molemmille alkuarvoksi nolla
  */
 public class Counters {
-    private int numero = 0;
     int[] vastaukset=new int[6];
     private int summa = 0;
 
@@ -25,17 +24,10 @@ public class Counters {
     }
 
     private Counters() {
-
-        /**lisää valitun vaihtoehdon pistemäärät lopulliseen pistesaldoon
-         * Metodia kutsutaan aina, kun käyttäjä valitsee radiobutton:in
-         *
-         * @param numero käyttäjän valinnasta saatu pistemäärä
-         */
     }
-    public void increase(int numero){
-        this.numero = numero;
-    }
-
+    /**
+     * Summaa kaikki vastaustaulukossa olevat luvut lopulliseksi tulokseksi
+     */
     public void setSumma(){
         if(summa==0){
             for (int i=0; i<6; i++){
@@ -55,11 +47,13 @@ public class Counters {
     }
 
     /**
-     * Metodi nollaa tuloksen
+     * Metodi nollaa tuloksen ja vastaustaulukon
      * Metodia kutsutaan aina kun kyselylomakkeesta poistutaan etusivulle
      */
     public void reset(){
-        this.numero = 0;
+        for (int i=0; i<6; i++){
+            vastaukset[i]=0;
+        }
         this.summa = 0;
     }
 }

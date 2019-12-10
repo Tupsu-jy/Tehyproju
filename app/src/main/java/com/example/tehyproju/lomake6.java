@@ -42,6 +42,7 @@ public class lomake6 extends AppCompatActivity {
      * Metodi kutsuu counters-luokasta lopullista tulosta (get.Tulos())
      * Metodia kutsutaan, kun käyttäjä painaa "Lake tulos" nappia
      * Saatu numero tulostetaan textView elementtiin "arvosana"
+     * If lause varmistaa että käyttäjä ei voi tallentaa kyselya jos ei ole vastannut mitään
      * @param view Button-elementti
      */
     public void tulos(View view){
@@ -72,7 +73,8 @@ public class lomake6 extends AppCompatActivity {
 
     /**
      * Metodia kutsutaan, kun käyttäjä valitsee jonkin radioButton:in
-     * Metodi tarkistaa, mikä badioButton on valittu ja kutsuu Counters-luokan increase-metodia sen mukaisella arvolla
+     * Metodi tarkistaa, mikä badioButton on valittu ja muokkaa Counters-luokan vaustaukset taulukkoa
+     * sille kuuluvalla kohdalla valitun vastauksen mukaisella arvolla
      * @param view käyttäjän valitsema radiobutton
      */
     public void onRadioButtonClicked(View view){
