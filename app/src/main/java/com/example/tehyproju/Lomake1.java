@@ -43,9 +43,11 @@ public class Lomake1 extends AppCompatActivity {
 
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, Lomake2.class);
-                startActivity(intent);
-                page1.setSumma();
+                if(page1.vastaukset[0]!=0){
+                    Intent intent = new Intent(context, Lomake2.class);
+                    startActivity(intent);
+                }
+                //page1.setSumma();
             }
         });
     }
@@ -61,43 +63,43 @@ public class Lomake1 extends AppCompatActivity {
             switch (view.getId()) {
                 case R.id.mieliala1:
                     if (checked)
-                        page1.increase(1);
+                        page1.vastaukset[0]=1;
                     break;
                 case R.id.mieliala2:
                     if (checked)
-                        page1.increase(2);
+                        page1.vastaukset[0]=2;
                     break;
                 case R.id.mieliala3:
                     if (checked)
-                        page1.increase(3);
+                        page1.vastaukset[0]=3;
                     break;
                 case R.id.mieliala4:
                     if (checked)
-                        page1.increase(4);
+                        page1.vastaukset[0]=4;
                     break;
                 case R.id.mieliala5:
                     if (checked)
-                        page1.increase(5);
+                        page1.vastaukset[0]=5;
                     break;
                 case R.id.mieliala6:
                     if (checked)
-                        page1.increase(6);
+                        page1.vastaukset[0]=6;
                     break;
                 case R.id.mieliala7:
                     if (checked)
-                        page1.increase(7);
+                        page1.vastaukset[0]=7;
                     break;
                 case R.id.mieliala8:
                     if (checked)
-                        page1.increase(8);
+                        page1.vastaukset[0]=8;
                     break;
                 case R.id.mieliala9:
                     if (checked)
-                        page1.increase(9);
+                        page1.vastaukset[0]=9;
                     break;
                 case R.id.mieliala10:
                     if (checked)
-                        page1.increase(10);
+                        page1.vastaukset[0]=10;
                     break;
             }
 

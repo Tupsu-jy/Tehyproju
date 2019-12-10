@@ -42,9 +42,11 @@ public class Lomake3 extends AppCompatActivity {
 
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, Lomake4.class);
-                startActivity(intent);
-                page3.setSumma();
+                if(page3.vastaukset[2]!=0) {
+                    Intent intent = new Intent(context, Lomake4.class);
+                    startActivity(intent);
+                }
+                //page3.setSumma();
             }
         });
     }
@@ -60,43 +62,43 @@ public class Lomake3 extends AppCompatActivity {
         switch (view.getId()){
             case R.id.liikunta1:
                 if (checked)
-                    page3.increase(1);
+                    page3.vastaukset[2]=(1);
                 break;
             case R.id.liikunta2:
                 if (checked)
-                    page3.increase(2);
+                    page3.vastaukset[2]=(2);
                 break;
             case R.id.liikunta3:
                 if (checked)
-                    page3.increase(3);
+                    page3.vastaukset[2]=(3);
                 break;
             case R.id.liikunta4:
                 if (checked)
-                    page3.increase(4);
+                    page3.vastaukset[2]=(4);
                 break;
             case R.id.liikunta5:
                 if (checked)
-                    page3.increase(5);
+                    page3.vastaukset[2]=(5);
                 break;
             case R.id.liikunta6:
                 if (checked)
-                    page3.increase(6);
+                    page3.vastaukset[2]=(6);
                 break;
             case R.id.liikunta7:
                 if (checked)
-                    page3.increase(7);
+                    page3.vastaukset[2]=(7);
                 break;
             case R.id.liikunta8:
                 if (checked)
-                    page3.increase(8);
+                    page3.vastaukset[2]=(8);
                 break;
             case R.id.liikunta9:
                 if (checked)
-                    page3.increase(9);
+                    page3.vastaukset[2]=(9);
                 break;
             case R.id.liikunta10:
                 if (checked)
-                    page3.increase(10);
+                    page3.vastaukset[2]=(10);
                 break;
         }
 

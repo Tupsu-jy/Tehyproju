@@ -42,9 +42,11 @@ public class Lomake5 extends AppCompatActivity {
 
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, lomake6.class);
-                startActivity(intent);
-                page5.setSumma();
+                if(page5.vastaukset[4]!=0) {
+                    Intent intent = new Intent(context, lomake6.class);
+                    startActivity(intent);
+                }
+                //page5.setSumma();
             }
         });
     }
@@ -60,43 +62,43 @@ public class Lomake5 extends AppCompatActivity {
         switch (view.getId()){
             case R.id.uni1:
                 if (checked)
-                    page5.increase(1);
+                    page5.vastaukset[4]=(1);
                 break;
             case R.id.uni2:
                 if (checked)
-                    page5.increase(2);
+                    page5.vastaukset[4]=(2);
                 break;
             case R.id.uni3:
                 if (checked)
-                    page5.increase(3);
+                    page5.vastaukset[4]=(3);
                 break;
             case R.id.uni4:
                 if (checked)
-                    page5.increase(4);
+                    page5.vastaukset[4]=(4);
                 break;
             case R.id.uni5:
                 if (checked)
-                    page5.increase(5);
+                    page5.vastaukset[4]=(5);
                 break;
             case R.id.uni6:
                 if (checked)
-                    page5.increase(6);
+                    page5.vastaukset[4]=(6);
                 break;
             case R.id.uni7:
                 if (checked)
-                    page5.increase(7);
+                    page5.vastaukset[4]=(7);
                 break;
             case R.id.uni8:
                 if (checked)
-                    page5.increase(8);
+                    page5.vastaukset[4]=(8);
                 break;
             case R.id.uni9:
                 if (checked)
-                    page5.increase(9);
+                    page5.vastaukset[4]=(9);
                 break;
             case R.id.uni10:
                 if (checked)
-                    page5.increase(10);
+                    page5.vastaukset[4]=(10);
                 break;
         }
 

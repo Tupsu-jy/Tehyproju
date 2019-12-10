@@ -15,6 +15,7 @@ import java.util.Date;
  */
 public class Counters {
     private int numero = 0;
+    int[] vastaukset=new int[6];
     private int summa = 0;
 
     private static final Counters ourInstance = new Counters();
@@ -36,7 +37,12 @@ public class Counters {
     }
 
     public void setSumma(){
-        this.summa = summa + this.numero;
+        if(summa==0){
+            for (int i=0; i<6; i++){
+                this.summa+=vastaukset[i];
+            }
+        }
+
     }
 
     /**

@@ -27,7 +27,7 @@ public class Lomake2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lomake2);
         addListenerOnButton();
-        page2.setSumma();
+        //page2.setSumma();
     }
 
     /**
@@ -43,8 +43,10 @@ public class Lomake2 extends AppCompatActivity {
 
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, Lomake3.class);
-                startActivity(intent);
+                if(page2.vastaukset[1]!=0) {
+                    Intent intent = new Intent(context, Lomake3.class);
+                    startActivity(intent);
+                }
             }
         });
     }
@@ -60,43 +62,44 @@ public class Lomake2 extends AppCompatActivity {
         switch (view.getId()){
             case R.id.sosiaali1:
                 if (checked)
-                    page2.increase(1);
+                    page2.vastaukset[1]=(1);
                 break;
+
             case R.id.sosiaali2:
                 if (checked)
-                    page2.increase(2);
+                    page2.vastaukset[1]=(2);
                 break;
             case R.id.sosiaali3:
                 if (checked)
-                    page2.increase(3);
+                    page2.vastaukset[1]=(3);
                 break;
             case R.id.sosiaali4:
                 if (checked)
-                    page2.increase(4);
+                    page2.vastaukset[1]=(4);
                 break;
             case R.id.sosiaali5:
                 if (checked)
-                    page2.increase(5);
+                    page2.vastaukset[1]=(5);
                 break;
             case R.id.sosiaali6:
                 if (checked)
-                    page2.increase(6);
+                    page2.vastaukset[1]=(6);
                 break;
             case R.id.sosiaali7:
                 if (checked)
-                    page2.increase(7);
+                    page2.vastaukset[1]=(7);
                 break;
             case R.id.sosiaali8:
                 if (checked)
-                    page2.increase(8);
+                    page2.vastaukset[1]=(8);
                 break;
             case R.id.sosiaali9:
                 if (checked)
-                    page2.increase(9);
+                    page2.vastaukset[1]=(9);
                 break;
             case R.id.sosiaali10:
                 if (checked)
-                    page2.increase(10);
+                    page2.vastaukset[1]=(10);
                 break;
         }
 
