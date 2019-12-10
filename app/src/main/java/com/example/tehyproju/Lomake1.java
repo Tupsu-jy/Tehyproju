@@ -21,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Lomake1 extends AppCompatActivity {
 
     Counters page1 = Counters.getInstance();
+    boolean vastattu = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,7 @@ public class Lomake1 extends AppCompatActivity {
             public void onClick(View arg0) {
                 Intent intent = new Intent(context, Lomake2.class);
                 startActivity(intent);
+                page1.setSumma();
             }
         });
     }

@@ -33,6 +33,9 @@ public class Counters {
     }
     public void increase(int numero){
         this.numero = numero;
+    }
+
+    public void setSumma(){
         this.summa = summa + this.numero;
     }
 

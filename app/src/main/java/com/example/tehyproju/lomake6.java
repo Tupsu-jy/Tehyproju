@@ -50,6 +50,7 @@ public class lomake6 extends AppCompatActivity {
         QuestRDatabase.getInstance().qDao().insert(newq);
 
         TextView arvosana = findViewById(R.id.tulos_numero);
+        page6.setSumma();
         arvosana.setText(Integer.toString(page6.getTulos()));
 
 

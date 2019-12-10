@@ -44,6 +44,7 @@ public class Lomake5 extends AppCompatActivity {
             public void onClick(View arg0) {
                 Intent intent = new Intent(context, lomake6.class);
                 startActivity(intent);
+                page5.setSumma();
             }
         });
     }
