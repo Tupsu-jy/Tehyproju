@@ -11,7 +11,7 @@ import java.util.Date;
 
 /**
  * Singleton-luokka, jota käytetään pistemäärän laskemiseen käyttäjän valinnoista
- * Esitellään numero ja summa muuttujat ja annetaan molemmille alkuarvoksi nolla
+ * Luodaan vastauksille kuusialkioinen taulukko ja summa muuttuja, jolle annetaan alkuarvoksi nolla
  */
 public class Counters {
     int[] vastaukset=new int[6];
@@ -26,6 +26,7 @@ public class Counters {
     private Counters() {
     }
     /**
+     * Käy läpi kaikkien vastauslomake sivujen (6 kpl) vastaukset
      * Summaa kaikki vastaustaulukossa olevat luvut lopulliseksi tulokseksi
      */
     public void setSumma(){
