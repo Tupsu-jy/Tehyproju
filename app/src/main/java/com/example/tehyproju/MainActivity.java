@@ -15,8 +15,6 @@ import com.example.tehyproju.db.QuestRDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    Counters page0 = Counters.getInstance();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -45,13 +43,11 @@ public class MainActivity extends AppCompatActivity {
 
     /** Ohjelma avaa Lomake1-luokan, kun käyttäjä painaa nappia
      * Napin painallus aloittaa uuden Intent:in
-     * Kyselylomakkeen avaus aloittaa pisteidenlaskun aina alusta
      * @param view button-elementti
      */
     public void lisaaMerkinta(View view){
         Intent intent1 = new Intent(getApplicationContext(), Lomake1.class);
         startActivity(intent1);
-        page0.reset();
     }
 
     /** Ohjelma avaa vinkit-luokan, kun käyttäjä painaa nappia

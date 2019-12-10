@@ -58,6 +58,7 @@ public class lomake6 extends AppCompatActivity {
     /**
      * Metodi palauttaa takaisin MainActivity:yn
      * Metodia kutsutaan, kun käyttäjä painaa nappia, jossa on se OnClick-metodina
+     * Napin painallus nollaa tuloksen aina
      * @param view button
      */
     public void palaaEtusivulle(View view){
