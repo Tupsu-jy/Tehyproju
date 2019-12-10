@@ -57,12 +57,15 @@ public class Graph extends AppCompatActivity {
         graph.setVisibility(View.VISIBLE);
 
         series = new PointsGraphSeries<DataPoint>(data);
-        //seuraavaksi customoidan kaavion merkit
+        //seuraavaksi customoidan kaavion merkit ja asetetaan minimi ja maksimi arvot
+        // kutsumalla tähän terkoitettuja metodejea
         customize();
         minmax();
         graph.addSeries(series);
     }
-
+    /**
+     * Metodi jonka avulla kaavion merkit kustomoidaan päivämääriksi
+     */
     public void customize(){
         series.setCustomShape(new PointsGraphSeries.CustomShape() {
             @Override
