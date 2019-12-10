@@ -46,8 +46,8 @@ public class Counters {
     }
 
     /**
-     * Metodi nollaa tuloksen takaisin nollaksi
-     * Metodia kutsutaan aina kun kyselylomake avataan etusivulta
+     * Metodi nollaa tuloksen
+     * Metodia kutsutaan aina kun kyselylomakkeesta poistutaan etusivulle
      */
     public void reset(){
         this.numero = 0;

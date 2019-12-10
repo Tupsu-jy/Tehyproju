@@ -1,5 +1,6 @@
 /**Käyttäjän valitseman nappi käynnistää intentin valittuun activity:yn
  * @author Reija Parvio & Heini Näppä & Jaakko Ylinen
+ * @version 10.12.2019
  */
 
 package com.example.tehyproju;
