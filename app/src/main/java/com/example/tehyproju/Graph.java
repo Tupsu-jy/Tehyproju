@@ -41,28 +41,33 @@ public class Graph extends AppCompatActivity {
 
         QDao dao=QuestRDatabase.getInstance().qDao();
 
-        final Quest[] quests=dao.getQuestsByOrder();
+        final Quest[] quests=dao.getQuestsByOrder(); // Taulukusta haetaan kyselyt järjestyksessä
         DataPoint[] data= new DataPoint[quests.length];
 
         for (int i = 0; i < quests.length; i++){
             data[i]=new DataPoint(( quests[i].getId()), ((double) quests[i].getPoints()));
+            //data taulukkoon laiteteaan Datapoint olioita joiden arvot ovat kydelyn id ja pisteet
         }
 
         GraphView graph = (GraphView) findViewById(R.id.graph);
         graph.setVisibility(View.VISIBLE);
 
         PointsGraphSeries<DataPoint> series = new PointsGraphSeries<DataPoint>(data);
+        //seuraavaksi customoidan kaavion merkit
         series.setCustomShape(new PointsGraphSeries.CustomShape() {
             @Override
             public void draw(Canvas canvas, Paint paint, float x, float y, DataPointInterface dataPoint) {
                 paint.setColor(Color.BLACK);
                 paint.setTextSize(38);
 
-                String pattern = "yyyy-MM-dd";
+                String pattern = "yyyy-MM-dd";//valitaan formaatti missä päivämäärä esitetään
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-
                 String date=simpleDateFormat.format(DateConverter.toDate(quests[((int) dataPoint.getX())].getDate()));
-                canvas.drawText("X "+date, x, y, paint);
+                //yhdellä rivillä haetaan quests kysely taulukosta päivämäärä käyttäen kyselyn id:tä mikä on tallennettu
+                //data taulukkoon. Päivämäärä saapuu longin joten se muutetaan dateksi jonka jälkeen se muutetaan stringiksi
+                //ja haluttuun formaattiin.
+                canvas.drawText("X "+date, x, y, paint);//tässä kaavion merkiksi valitaa päivämäärä jonka eteen
+                //laitetaan X merkkaamaan tarkemmin mihin kohtaan viitataan
             }
         });
 
