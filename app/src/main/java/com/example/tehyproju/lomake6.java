@@ -29,13 +29,13 @@ public class lomake6 extends AppCompatActivity {
 
 
     Counters page6 = Counters.getInstance();
-    QDao temp=QuestRDatabase.getInstance().qDao();
-    int newid=temp.size();
+    int newid=QuestRDatabase.getInstance().qDao().size();//tässä haetaan uuden kyselyn id
+    //koska id:t alkavat nollasta voidaan taulukon kokoa käyttää aina uuden kyselyn id:nä
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lomake6);
-        //addListenerOnButton();
     }
 
     /**
