@@ -70,8 +70,23 @@ public class Graph extends AppCompatActivity {
                 //laitetaan X merkkaamaan tarkemmin mihin kohtaan viitataan
             }
         });
-
+        minmax(graph, quests.length);
         graph.addSeries(series);
+    }
+    /**
+     * Metodi jonka avulla kaaviolle asetetaan minimi ja maximi arvot
+     * @param graph kaavio jonka arvoja muokataan
+     * @param length kyselyiden määrä
+     */
+    public void minmax(GraphView graph, int length){
+
+        graph.getViewport().setXAxisBoundsManual(true);
+        graph.getViewport().setYAxisBoundsManual(true);
+        graph.getViewport().setMinX(0);
+        graph.getViewport().setMaxX(length+2);
+
+        graph.getViewport().setMinY(0);
+        graph.getViewport().setMaxY(65);
     }
 
 }
