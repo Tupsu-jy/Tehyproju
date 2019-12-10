@@ -27,7 +27,6 @@ public class Lomake2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lomake2);
         addListenerOnButton();
-        //page2.setSumma();
     }
 
     /**

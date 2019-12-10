@@ -47,7 +47,6 @@ public class Lomake3 extends AppCompatActivity {
                     Intent intent = new Intent(context, Lomake4.class);
                     startActivity(intent);
                 }
-                //page3.setSumma();
             }
         });
     }
